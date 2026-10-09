@@ -57,7 +57,7 @@ require("which-key").add({
   -- not overridden — see CLAUDE.md). gd/gD/gl/K are bound on LspAttach.
   { "gr",  group = "LSP actions (native 0.12)" },
   { "gra", desc = "LSP: code Action",        mode = { "n", "x" } },
-  { "grn", desc = "LSP: reName symbol" },
+  { "grn", desc = "LSP: reName symbol (lspsaga)" },
   { "grr", desc = "LSP: References" },
   { "gri", desc = "LSP: Implementations" },
   { "grt", desc = "LSP: Type definition" },

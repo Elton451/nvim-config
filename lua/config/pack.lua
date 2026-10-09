@@ -46,6 +46,7 @@ vim.pack.add({
 	"https://github.com/mason-org/mason.nvim",
 	"https://github.com/neovim/nvim-lspconfig",
 	"https://github.com/b0o/schemastore.nvim", -- JSON/YAML schemas
+	"https://github.com/nvimdev/lspsaga.nvim", -- rename/peek/code-action UIs
 
 	-- ------ Completion & snippets --------------------------------------------
 	-- blink.cmp replaces the nvim-cmp/cmp-nvim-lsp/cmp-buffer/cmp-path stack
@@ -122,6 +123,10 @@ vim.pack.add({
   "https://github.com/kawre/leetcode.nvim",
   "https://github.com/tree-sitter/tree-sitter-html",
   "https://github.com/MunifTanjim/nui.nvim",
+
+  "https://github.com/otavioschwanck/arrow.nvim",
+  "https://github.com/enochchau/nvim-pretty-ts-errors",
+  { src = "https://github.com/jake-stewart/multicursor.nvim", branch = "1.0" },
 })
 
 -- ---------------------------------------------------------------------------
@@ -144,6 +149,7 @@ safe_require("treesitter")
 safe_require("telescope")
 safe_require("completion") -- blink.cmp — before LSP
 safe_require("lsp") -- uses blink.cmp capabilities
+safe_require("lspsaga") -- after lsp
 safe_require("tree")
 safe_require("c_sharp")
 safe_require("git")
@@ -157,3 +163,6 @@ safe_require("misc")
 safe_require("toggleterm")
 safe_require("ufo")
 safe_require("leetcode")
+safe_require("transparent")
+safe_require("arrow")
+safe_require("multi-cursor")
